@@ -1,19 +1,26 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Proyecto_Victor_2023</ion-title>
+    <ion-title color="primary">Proyecto_Victor_2023</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <!--Boton de Ionic-->
-  <ion-button routerLink="/alert">
+  <!--<ion-button routerLink="/alert">
     Alert
-  </ion-button>
+  </ion-button> -->
 
   <!--Boton de Ionic-->
-  <ion-button routerLink="/action-sheet">
+  <!-- <ion-button routerLink="/action-sheet">
     Action Sheet
-  </ion-button>
+  </ion-button> -->
+
+  <ion-list>
+    <ion-item *ngFor="let element of componentes" [routerLink]="element.redirectTo" detail>
+      <ion-icon [name]="element.icon" slot="start" color="primary"></ion-icon>
+      {{element.name}}
+    </ion-item>
+  </ion-list>
 
 </ion-content>

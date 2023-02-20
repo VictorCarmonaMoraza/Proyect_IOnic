@@ -8,10 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   //Para recibir de cada boton el titulo
-  @Input() titulo:string = '';
+  @Input() titulo: string = '';
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
 }

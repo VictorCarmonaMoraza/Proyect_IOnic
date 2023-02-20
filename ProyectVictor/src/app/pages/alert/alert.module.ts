@@ -19,4 +19,4 @@ import { AlertPage } from './alert.page';
   ],
   declarations: [AlertPage]
 })
-export class AlertPageModule {}
+export class AlertPageModule { }
